@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+
+nav{
+    background-color: black;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding-left: 4vw;
+}
+
+.logo{
+    height: 4vh;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    height: 75vh;
+    width: 80vw;
+    background-color: white;
+    margin-top: 2vh;
+    margin-left: 10vw;
+    background-image: url("bg.jpg");
+    background-size: 80vw 70vh;
+    border-radius: 10vh;
+    position: absolute;
+    padding-top: 5vh;
+    overflow-y: scroll;
+}
+
+.detail{
+    position: absolute;
+    bottom: 0%;
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.bar{
+    width: 80vw;
+    margin-left: 10vw;
+    align-items: center;
+    margin-top: 3vh;
+}
+.song_detail{
+    height: 10vh;
+    width: 100vw;
+    margin-top: 1vh;
+    padding-left: 10vw;
+    display: flex;
+    font-size: 1vh;
+    justify-content: baseline;
+    background-color: black;
+    
+    
+}
+.song_name{
+    color: white;
+}
+
+.playing{
+    height: 3vh;
+    width: 3vw;
+    opacity: 0;
+    transition:ease;
+}
+
+.button{
+    display: flex;
+    background-color:transparent;
+    width: 100%;
+    gap:1vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10vh;
+}
+.btn,.pause{
+    height: 6vh;
+    display: flex;
+    width: 6vh;
+}
+
+.btn1{
+    display: flex;
+    position: relative;
+    height: 6vh;
+    width: 6vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.pause{
+    opacity: 0;
+    position: absolute;
+}
+.masterplay{
+    position: absolute;
+}
+
+.left{
+    width: 60vw;
+    height: 60vh;
+
+}
+
+.song_container{
+    height: 6vh;
+    width:40vw;
+    margin-top: 3vh;
+    margin-left: 2vw;
+    position: relative;
+    background-color: bisque;
+    border-radius: 10vh;
+    display: flex;
+    justify-content:space-between;
+}
+
+.image{
+    height: 3vh;
+    width: 3vw;
+    margin-top: 1.5vh;
+    margin-left: 1vw;
+}
+
+.songname{
+    margin-top: 2vh;
+}
+
+.songdetail{
+    display: flex;
+    gap: 1vw;
+
+}
+
+.play{
+  display: flex;
+  gap: 1vw;
+  margin-right: 2vw;
+}
+
+.icon{
+    height: 3vh;
+    margin-top: 1.5vh;
+    position: absolute;
+}
+
+.box{
+    display: flex;
+    position: relative;
+    padding-right: 2vh;
+}
+
+.blur{
+    opacity: 0;
+}
+
+@media screen and (max-width: 600px){
+
+    .container{
+        width: 100%;
+        margin-left: 0;
+        padding-left: 2vw;
+        padding-bottom: 5vh;
+
+    }
+
+    .playing{
+        width: 10vw;
+    }
+
+    .song_name{
+        margin-left: 5vw;
+    }
+
+    .button{
+        margin-top: -8vh;
+    }
+}
